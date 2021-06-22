@@ -2,7 +2,7 @@ from collections import deque
 
 import numpy as np
 
-from ..game import Game, Action
+from deep_rl.agent.muzero_helpers.game import Game, Action
 
 
 class ClassicControlWrapper(Game):

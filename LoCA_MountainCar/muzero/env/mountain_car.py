@@ -13,7 +13,7 @@ import gym
 from gym import spaces
 from gym.utils import seeding
 from ..mcts import Node
-from ..game import Action, ActionHistory
+from deep_rl.agent.muzero_helpers.game import Action, ActionHistory
 from collections import deque
 
 

@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from ..model import BaseMuZeroNet
+from deep_rl.agent.muzero_helpers.model import BaseMuZeroNet
 
 
 class MuZeroNet(BaseMuZeroNet):

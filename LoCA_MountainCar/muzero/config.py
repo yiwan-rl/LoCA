@@ -1,6 +1,6 @@
 import os
 import torch
-from .game import Game
+from deep_rl.agent.muzero_helpers.game import Game
 
 
 class DiscreteSupport:

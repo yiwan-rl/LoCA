@@ -1,8 +1,8 @@
 import numpy as np
 import time
 
-from utils import create_filename, save_results, update_summary_writer
-from config import get_domain_setting, get_experiment_setting
+from LoCA_MountainCar.utils import create_filename, save_results, update_summary_writer
+from LoCA_MountainCar.config import get_domain_setting, get_experiment_setting
 
 import argparse
 import pickle
@@ -29,14 +29,14 @@ experiment_settings['filename'] = filename
 
 if experiment_settings['method'] == 'sarsa_lambda':
     agent_config = []
-    from sarsa_lambda.sarsa_lambda import build_agent, load_agent
+    from LoCA_MountainCar.sarsa_lambda.sarsa_lambda import build_agent, load_agent
 elif experiment_settings['method'] == 'MuZero':
-    from muzero.MuZeroAgent import MuZeroAgent, build_agent
-    from muzero.env import muzero_config
+    from LoCA_MountainCar.muzero.MuZeroAgent import MuZeroAgent, build_agent
+    from LoCA_MountainCar.muzero.env import muzero_config
     agent_config = muzero_config
     agent_config.flippedTask = args.flipped_terminals
     agent_config.flippedActions = args.flipped_actions
-    from muzero.MuZeroAgent import build_agent, load_agent
+    from LoCA_MountainCar.muzero.MuZeroAgent import build_agent, load_agent
 else:
     assert False, 'HvS: Invalid method id.'
 # Pre-Training phase ###########################################################################################

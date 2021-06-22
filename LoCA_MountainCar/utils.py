@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import json
-from muzero.env import muzero_config
+from LoCA_MountainCar.muzero.env import muzero_config
 from torch.utils.tensorboard import SummaryWriter
 
 

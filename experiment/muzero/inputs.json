@@ -1,0 +1,19 @@
+{
+	"task_name": ["CartPole-v0", "LunarLander-v2", "Corridol", "Pixelcopter-PLE-v0", "PuckWorld-PLE-v0", "Pong-PLE-v0", "FlappyBird-PLE-v0"],
+	"agent_name": ["MuZero"],
+    "network_name": ["MuZero"],
+	"optimizer_name": ["Adam"],
+	"lr": [0.001],
+	"num_workers": [1],
+	"use_target_network": [false],
+	"q_body": ["FCBody"],
+	"q_body_network": [[64, 64]],
+	"output_layer_bias": [false],
+	"discount": [0.9],
+	"q_body_gate": ["tanh"],
+	"timeout": [1000],
+	"memory_size": [1],
+	"batch_size": [1],
+	"self.linear_schedule_start": [0.1],
+	"self.linear_schedule_end": [0.1]
+}

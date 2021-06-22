@@ -6,9 +6,9 @@ import torch.optim as optim
 from torch.nn import L1Loss
 
 from .mcts import MCTS, Node
-from .replay_buffer import ReplayBuffer
+from deep_rl.agent.muzero_helpers.replay_buffer import ReplayBuffer
 from .evaluate import evaluate
-from .utils import select_action
+from deep_rl.agent.muzero_helpers.utils import select_action
 import time
 
 train_logger = logging.getLogger('train')
